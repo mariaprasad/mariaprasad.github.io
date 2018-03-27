@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> My First Website </title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> <!--to include bootstrap properties-->
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> <!-- to include font awesome icons-->
+	<link rel="stylesheet" type="text/css" href="mywebsite.css"> <!--to include css file from the same directory-->
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+		<div class="navbar-header">
+		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>  <!-- creates the hamburger symbol-->
+			<a class="navbar-brand" href="#"> <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Rosh</a>
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"><!-- this collects all the labels below and hides at a certain point-->
+		<div class="nav navbar-nav navbar-right">
+			<li><a href="#">About</a></li>
+			<li><a href="#">Skills</a></li>
+			<li><a href="#">Projects</a></li>
+			<li><a href="#">Portfolio</a></li>
+			<li><a href="#">Contact Me</a></li>	
+		</div>
+		</div>
+	</nav>
+	<div class="container"> <!--container is to make things look good and systematic. if you don't want to use grid system you can use class container-->
+		<!--<div class="jumbotron">-->
+		<div class="row">
+			<div class="col-lg-12">
+				<div id="content">
+					<h1>Maria Prasad</h1> 
+					<h2>Front End Web Developer</h2>
+					<h3> Passionate, Smart, Self-Motivated, Problem Solver </h3>
+					<hr>
+					<button class="btn btn-default btn-lg"><span class = "buttontext">Get my CV</span></button>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+
+<script src="https://code.jquery.com/jquery-2.1.4.js"></script> <!--to include jquery to support JavaScript for navigation bar and hamburger icon-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 	
+</body>
+</html>

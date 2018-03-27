@@ -1,0 +1,43 @@
+body {
+	background:url(https://images.unsplash.com/photo-1516823989326-bd1bd7d6f4f2?ixlib=rb-0.3.5&s=24dfddda50837ca8d861c4c090739938&auto=format&fit=crop&w=1047&q=80);
+	background-size:cover; 
+	background-position: center;
+	
+}
+html {
+	height:100%
+}
+
+.jumbotron {
+	color: #2c3e50;   /* dark blue   */
+	background: #ecf0f1; /* Light gray */
+}
+
+.navbar-inverse {
+	background: #2c3e50;   /* dark blue   */
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+}
+
+.navbar-inverse .navbar-brand {
+    color: white;
+}
+#content {
+	text-align:center;
+	padding-top:25%;
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),     /* x-offset, y-offset, blurr radius, color */
+				 0px 8px 13px rgba(0,0,0,0.1),
+				 0px 18px 23px rgba(0,0,0,0.1);
+}
+h1 {
+	font-weight:700;
+	font-size: 4em;
+}
+
+hr {
+	width:500px;
+	border-top: 1px solid #f8f8f8;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+}
