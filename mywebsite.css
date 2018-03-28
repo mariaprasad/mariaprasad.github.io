@@ -1,43 +1,173 @@
+* {
+    box-sizing: border-box;
+}
+/* Style the body */
 body {
-	background:url(https://images.unsplash.com/photo-1516823989326-bd1bd7d6f4f2?ixlib=rb-0.3.5&s=24dfddda50837ca8d861c4c090739938&auto=format&fit=crop&w=1047&q=80);
-	background-size:cover; 
-	background-position: center;
-	
-}
-html {
-	height:100%
+    /*font-family: Georgia, Helvetica, sans-serif;*/
+	font-family: "Roboto", sans-serif;
+	line-height: 1.5;
+	/*padding: 4em 1em;*/
+    margin: 0;
 }
 
-.jumbotron {
-	color: #2c3e50;   /* dark blue   */
-	background: #ecf0f1; /* Light gray */
-}
-
-.navbar-inverse {
-	background: #2c3e50;   /* dark blue   */
-}
-
-.navbar-inverse .navbar-nav>li>a {
+/* Header/logo Title */
+.header {
+    padding: 80px;
+    text-align:center;
+    background:url("https://images.unsplash.com/photo-1485498128961-422168ba5f87?ixlib=rb-0.3.5&s=bb0e76f1949725c83131d875abaa0f1a&auto=format&fit=crop&w=1102&q=80");
+    background-position:center;
+    background-size: cover;
+   /* background: #1abc9c;*/
     color: white;
-}
-
-.navbar-inverse .navbar-brand {
-    color: white;
-}
-#content {
-	text-align:center;
 	padding-top:25%;
 	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),     /* x-offset, y-offset, blurr radius, color */
 				 0px 8px 13px rgba(0,0,0,0.1),
 				 0px 18px 23px rgba(0,0,0,0.1);
 }
-h1 {
-	font-weight:700;
-	font-size: 4em;
+
+/* Increase the font size of the heading */
+.header h1 {
+    font-size: 50px;
 }
 
+/* Style the top navigation bar 
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+/* Style the navigation bar links 
+.navbar a {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+/* Right-aligned link 
+.navbar a.right {
+    float: right;
+} */
+/* Change color on hover 
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}*/
+
+/* Column container */
+.row {  
+    display: -ms-flexbox; 
+    display: flex;
+    -ms-flex-wrap: wrap; 
+    flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    -ms-flex: 30%; 
+    flex: 30%;
+    background-color: antiquewhite;
+    padding: 20px;
+}
+
+/* Main column */
+.main {   
+    -ms-flex: 70%; 
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Skills*/
+.skills_container {
+	/*width:70%;*/
+	display:flex;
+	justify-content:space-around;
+	padding-top:20px;
+	flex-wrap:wrap;
+    margin: 0 auto;
+}
+.skills_icons {
+	width:20%;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	/*padding: 20px;*/
+}
+.skills_icons i {
+	font-size: 50px;
+	color: #269986;
+}
+.para {
+	font-size: 13px;
+	display: block;
+	line-height: 24px;
+}
+
+.h2_main {
+	padding-top: 16px!important;
+	padding-bottom: 16px!important;
+	font-weight:400px;
+	font-size: 30px;
+	display:block;
+	margin: 10px 0;
+}
+
+.container{
+	padding: 0.01em 16px;
+	display: block;
+	font-size: 15px;
+}
+.h5_opacity {
+	opacity: 0.60;
+	font-weight: 400px;
+	margin:10px 0;
+	font-size:18px;
+	display:block;
+}
+.h6_text {
+	color: #269986!important;
+	font-size:16px;
+	font-weight: 400px;
+	margin:10px 0;
+	display: block;
+}
 hr {
-	width:500px;
-	border-top: 1px solid #f8f8f8;
-	border-bottom: 1px solid rgba(0,0,0,0.2);
+	border:0;
+	border-top:1px solid #eee;
+	margin:20px 0;
+	height:0;
+	overflow:visible;
+	box-sizing:content-box;	
+}
+
+/* Footer */
+.footer {
+    padding: 5px;
+    text-align: center;
+    background: #009688;
+	display: block;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .row {   
+        flex-direction: column;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
 }
